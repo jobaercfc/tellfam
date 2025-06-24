@@ -4,6 +4,16 @@
       "title": "Create and Send Personalized Greeting Cards",
       "description": "Design unique greeting cards for any occasion and send them directly to your loved ones. Choose from a variety of templates or create your own from scratch.",
       "button": "Create a Card"
+    },
+    "categories": {
+      "title": "Explore Card Categories",
+      "birthday": "Birthday",
+      "thankYou": "Thank You",
+      "holiday": "Holiday",
+      "congrats": "Congratulations"
+    },
+    "testimonials": {
+      "title": "What Our Users Say"
     }
   }
 }

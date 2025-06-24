@@ -1,6 +1,6 @@
 .home-container {
   .home-hero {
-    padding: 4rem 0;
+    padding: 2rem 0;
     &__media {
       display: flex;
       justify-content: center;
@@ -38,6 +38,110 @@
       &:hover {
         text-decoration: none;
         background-color: darken(#A8D9EB, 5%);
+      }
+    }
+  }
+  .home-categories {
+    //padding: 3rem 0;
+
+    h2 {
+      font-size: 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .categories-list {
+      display: flex;
+      //gap: 1rem;
+      justify-content: space-evenly;
+      overflow-x: auto;
+      padding-bottom: 1rem;
+
+      /* hide scrollbar if you like */
+      &::-webkit-scrollbar { display: none; }
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    .category-item {
+      flex: 0 0 200px;
+      text-align: center;
+      text-decoration: none;
+      color: inherit;
+
+      img {
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+
+      p {
+        margin-top: 0.5rem;
+        font-weight: 500;
+      }
+
+      &:hover {
+        transform: translateY(-4px);
+        transition: transform 0.2s;
+      }
+    }
+  }
+
+  /* — Testimonials */
+  .home-testimonials {
+    padding: 3rem 0;
+    margin-bottom: 2rem;
+    border-top: 1px solid #eee;
+
+    h2 {
+      font-size: 1.75rem;
+      margin-bottom: 2rem;
+    }
+
+    .testimonial {
+      margin-bottom: 2rem;
+
+      &__avatar {
+        img {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+
+      &__header {
+        display: flex;
+        align-items: baseline;
+        gap: 1rem;
+
+        h5 {
+          margin: 0;
+          font-weight: 600;
+        }
+
+        small {
+          font-size: 0.875rem;
+        }
+      }
+
+      &__stars {
+        margin: 0.5rem 0;
+
+        .star {
+          font-size: 1.25rem;
+          color: #ddd;
+        }
+
+        .filled {
+          color: #f5c518; /* golden */
+        }
+      }
+
+      &__text {
+        font-size: 1rem;
+        line-height: 1.6;
       }
     }
   }
